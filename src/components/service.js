@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./nav";
+import Side from "./sidebar";
 
 const Service = () => {
+    const [show, setShow] = useState(false);
   return (
     <div className="font-crimson">
       <div>
         <div>
-          <Nav />
+        <Nav setShow={setShow} show={show}/>
+          <Side show={show}/>
         </div>
 
         <div>

@@ -5,6 +5,7 @@ import About from "./components/about";
 import Service from "./components/service";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
+import Side from "./components/sidebar";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/service" element={<Service />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/side" element={<Side />} />
         </Routes>
       </Router>
     </div>

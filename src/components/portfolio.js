@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./nav";
+import Side from "./sidebar";
 
 const Portfolio = () => {
+    const [show, setShow] = useState(false);
+
   return (
     <div>
       <div>
         {/* <!-- nav content --> */}
         <div>
-          <Nav />
+        <Nav setShow={setShow} show={show}/>
+          <Side show={show}/>
         </div>
 
         <div>
@@ -17,21 +21,21 @@ const Portfolio = () => {
                 <img
                   src="./img/farmcorp.jpeg"
                   alt=""
-                  className="h-40 rounded overflow-hidden shadow-md"
+                  className="h-40 rounded overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
                 />
               </a>
               <a href="https://pullova.netlify.app/">
                 <img
                   src="./img/portfolio1.jpeg"
                   alt=""
-                  className="h-40 rounded overflow-hidden shadow-md"
+                  className="h-40 rounded overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
                 />
               </a>
               <a href="https://silly-noether-76f19b.netlify.app">
                 <img
                   src="./img/portfolio2.jpeg"
                   alt=""
-                  className="h-40 rounded overflow-hidden shadow-md"
+                  className="h-40 rounded overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
                 />
               </a>
 
@@ -39,7 +43,7 @@ const Portfolio = () => {
                 <img
                   src="./img/portfolio3.jpeg"
                   alt=""
-                  className="h-40 rounded overflow-hidden shadow-md"
+                  className="h-40 rounded overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
                 />
               </a>
 
@@ -47,7 +51,7 @@ const Portfolio = () => {
                 <img
                   src="./img/portfolio4.jpeg"
                   alt=""
-                  className="h-40 rounded overflow-hidden shadow-md"
+                  className="h-40 rounded overflow-hidden transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 "
                 />
               </a>
             </div>

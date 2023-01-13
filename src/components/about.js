@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./nav";
+import Side from "./sidebar";
 
 const About = () => {
+    const [show, setShow] = useState(false);
   return (
     <div className="text-gray">
       <div>
         {/* <!-- nav content --> */}
         <div>
-          <Nav />
+        <Nav setShow={setShow} show={show}/>
+          <Side show={show}/>
         </div>
 
         <div className="mx-14 mt-14  font-body">

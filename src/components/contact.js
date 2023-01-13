@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./nav";
+import Side from "./sidebar";
 
 const Contact = () => {
+    const [show, setShow] = useState(false);
+    
   return (
     <div className="font-body">
       <div>
         {/* <!-- nav content --> */}
         <div>
-          <Nav />
+        <Nav setShow={setShow} show={show}/>
+        <Side show={show}/>
         </div>
 
         <div className="flex lg:mx-20 md:mx44 my-10 gap-2 md:gap-6   ">

@@ -18,6 +18,8 @@
     h2 {
       @apply text-xl;
     }
+
+   
     
   }
 
@@ -43,6 +45,8 @@
     .input {
         @apply  rounded shadow-2xl p-2 
     }
+
+   
   }
 
 /* .contact {

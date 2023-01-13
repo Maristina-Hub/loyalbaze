@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Nav from "./nav";
+import Side from "./sidebar"
 
 const Home = () => {
+    const [show, setShow] = useState(false);
+
+  
   return (
     <div className="font-body h-screen">
       <div className="flex justify-end w-full ">
@@ -11,7 +15,8 @@ const Home = () => {
       <div className="">
         {/* <!-- nav content --> */}
         <div>
-          <Nav />
+          <Nav setShow={setShow} show={show}/>
+          <Side show={show}/>
         </div>
 
         <div className="flex md:flex-row flex-col-reverse md:items-center justify-around mx-10 items-center ">
