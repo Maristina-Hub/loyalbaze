@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = ({setShow, show}) => {
@@ -9,7 +9,7 @@ const Nav = ({setShow, show}) => {
   return (
     <div className="font-body">
       <div className="">
-        {/* <!-- nav content --> */}
+        
         <div className=" mt-5">
           <nav className="flex justify-between items-center w-[90%] mx-auto ">
             <div className="flex justify-between">
