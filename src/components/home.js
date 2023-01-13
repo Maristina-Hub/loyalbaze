@@ -7,8 +7,8 @@ const Home = () => {
 
   
   return (
-    <div className="font-body h-screen">
-      <div className="flex justify-end w-full ">
+    <div className="font-body h-full overflow-hidden ">
+      <div className="flex justify-end w-full">
         {/* <div className="w-[600px]   h-[90%]   rounded-bl-[80%] border absolute  bg-[#1d4ed8] p-2  -top-3  mt-2 opacity-30"></div> */}
       </div>
 
@@ -26,7 +26,7 @@ const Home = () => {
 
             <p className="uppercase text-gray-500">Hello my name is</p>
             <hr className="border-black-900 border-1 box-border w-12 mt-4 mb-6" />
-            <h1 className="font-body font-bold text-4xl mb-4 text-black">
+            <h1 className="font-body font-bold text-3xl  md:text-4xl mb-4 text-black">
               Okafor Chiamaka
             </h1>
             <h3 className="font-body font-bold mb-4 text-gray">

@@ -13,7 +13,7 @@ const Service = () => {
         </div>
 
         <div>
-          <div className="m-10 p-20 ml-52;">
+          <div className="m-10 p-10 lg:ml-52 ml-0 mr-0  md:p-10">
             <ul>
               <li className="list-disc mb-4">HTML 5</li>
               <li className="list-disc mb-4">CSS 3</li>
