@@ -11,7 +11,7 @@ const Side = ({show}) => {
        {show &&  <div className=" mt-5">
           <nav className="flex justify-between items-center w-[90%] mx-auto ">
            
-            <div className=" navlinks mt-3 md:static absolute md:min-h-fit min-h-[100vh] left-0 top-[9%] md:w-auto w-full flex px-12  bg-black md:bg-white text-white ">
+            <div className=" navlinks mt-3 md:static absolute md:min-h-fit min-h-[100vh] left-0 top-[9%] md:w-auto w-full flex px-12  bg-black md:bg-white text-white z-[200]">
               <ul className="uppercase flex md:flex-row flex-col md:items-center md:gap-[10vw] gap-10 mt-10">
               <li className={` ${window.location.pathname==="/"?"text-blue": "text-white"} text-black font-crimson hover:text-blue`}>
               
