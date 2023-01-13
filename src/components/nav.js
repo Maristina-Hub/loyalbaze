@@ -19,7 +19,7 @@ const Nav = ({setShow, show}) => {
                 className="h-10 "
               />
             </div>
-            <div className=" navlinks mt-3 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-12  bg-black lg:text-black md:bg-white text-white ">
+            <div className=" navlinks mt-3 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-12  bg-black lg:text-black md:bg-white text-white z-50 ">
               <ul className="uppercase flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li className={` ${window.location.pathname==="/"?"text-blue": "text-black"} text-black font-crimson hover:text-blue`}>
                   <Link to={"/"}>Home</Link>
@@ -45,7 +45,7 @@ const Nav = ({setShow, show}) => {
             <div className="" onClick={onClick}>
               <svg
                 
-                className="w-10 h-10 cursor-pointer md:hidden"
+                className="w-10 h-10 cursor-pointer md:hidden "
                 fill="none"
                 stroke="blue"
                 viewBox="0 0 24 24"

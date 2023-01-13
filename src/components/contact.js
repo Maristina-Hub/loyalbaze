@@ -14,8 +14,8 @@ const Contact = () => {
         <Side show={show}/>
         </div>
 
-        <div className="flex lg:mx-20 md:mx44 my-10 gap-2 md:gap-6   ">
-          <div className="card text-white flex justify-start gap-2   align-middle bg-gradient-to-r from-bg2 to-bg1  md:flex-row flex-col">
+        <div className="flex lg:mx-20 md:mx44 my-10 gap-2 md:gap-6 ">
+          <div className="card text-white flex justify-start gap-2   align-middle bg-gradient-to-r from-bg2 to-bg1  md:flex-row flex-col -z-50">
             <div className=" md:pt-24">
               <ul>
                 <li className="text-gray-700 flex">
@@ -63,7 +63,7 @@ const Contact = () => {
               </ul>
             </div>
 
-            <div className="card2 w-200">
+            <div className="card2 w-200 ">
               <form action="" className="text-black form">
                 <input
                   type="text"
