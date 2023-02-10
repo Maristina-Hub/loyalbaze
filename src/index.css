@@ -4,74 +4,45 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,900;1,400;1,600;1,900&display=swap");
 
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-xl;
-    }
-
-   
-    
+  h1 {
+    @apply text-2xl;
   }
-
-  @layer components {
-    .card {
-        @apply  rounded shadow-md opacity-50 align-middle m-2 p-10 w-128;
-      }
-      .card2 {
-        @apply bg-white rounded shadow-lg p-3 opacity-70;
-      }
-    
-    .form {
-      @apply  flex flex-col gap-3 ;
-    }
-    
-    .border {
-      @apply border-2 border-solid border-black;
-    }
-    
-    .placeholder {
-        @apply text-red
-    }
-    .input {
-        @apply  rounded shadow-2xl p-2 
-    }
-
-   
+  h2 {
+    @apply text-xl;
   }
+}
 
-/* .contact {
-    @apply m-10 p-20 ml-52;
+@layer components {
+  .body {
+    @apply text-white w-[100%] ;
   }
-  
   .card {
-    @apply  rounded shadow-md opacity-50 align-middle m-2 p-10 w-128;
+    @apply h-[100vh] w-[100%] bg-[#121B27];
   }
-  
   .card2 {
-      @apply bg-white rounded shadow-lg p-3 opacity-70;
-    }
+    @apply h-[120vh] w-[100%px] bg-[#2562b0] ;
+  }
   
+
+  .btn {
+    @apply rounded-full py-2 px-3  text-xs cursor-pointer tracking-wider;
+  }
   .form {
-    @apply  flex flex-col gap-3 ;
+    @apply flex flex-col gap-3  w-[633px] h-[90vh];
   }
-  
-  .border {
-    @apply border-2 border-solid border-black;
-  }
-  
-  .placeholder {
-      @apply text-red
-  }
+
   .input {
-      @apply  rounded shadow-2xl p-2 
-  } */
+    @apply rounded shadow-2xl p-2 w-[494px] h-[53px];
+  }
+  .textarea {
+    @apply w-[494px] h-[128px]  rounded shadow-2xl p-[10px];
+  }
+  .hr{
+    @apply w-[1240px] border m-auto border-[green] mt-6 flex justify-center
+  }
+}
