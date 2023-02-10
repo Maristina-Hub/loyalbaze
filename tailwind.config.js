@@ -20,7 +20,7 @@ module.exports = {
       }),
       fontFamily: {
         body: ["'Playfair Display', serif"],
-        crimson: ["'Crimson Text', serif"],
+       
       },
 
       fontSize: {

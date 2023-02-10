@@ -110,7 +110,7 @@ const SignUp = () => {
         </div>
         <div className="footer">
         <hr className="hr "/>
-        <h1 className="mt-12">hellow world</h1>
+        <h1 className="mt-12">hello world</h1>
         </div>
       </div>
     </div>
