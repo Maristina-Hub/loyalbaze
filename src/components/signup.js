@@ -21,7 +21,7 @@ const SignUp = () => {
           </div>
         </div>
         <div>
-          <h1>Turn your best customers into Loyal fans</h1>
+          <h1 className="w-[802px] h-[166px]">Turn your best customers into Loyal fans</h1>
           <p>
             Loyalbaze, empowers businesses to offer digital, mobile-first
             loyalty programs to their customers. With our AI Powered platform,

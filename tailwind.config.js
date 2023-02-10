@@ -18,10 +18,10 @@ module.exports = {
           200: "#888883",
         },
       }),
-      fontFamily: {
-        body: ["'Playfair Display', serif"],
+      // fontFamily: {
+      //   satoshi: [],
        
-      },
+      // },
 
       fontSize: {
         sm: "0.8rem",
