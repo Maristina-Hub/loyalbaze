@@ -49,7 +49,7 @@
     @apply h-[120vh] w-[100%] bg-[#121B27] ;
   }
   .card2 {
-    @apply h-[120vh] w-[100%] bg-[#121B27] overflow-y-hidden;
+    @apply h-[120vh] w-[100%] bg-[#121B27] ;
   }
 
   .btn {
@@ -69,10 +69,10 @@
     @apply w-[443px] h-[128px]  rounded shadow-2xl p-[10px] bg-[#121B27] border-[1px] border-[#FFFFFF] ;
   }
   .hr {
-    @apply w-[1240px] border m-auto border-[green] mt-6 flex justify-center;
+    @apply w-[1240px] border left-[100px] top-[1155px]  border-[green] mt-6 flex justify-center items-center;
   }
   .footer {
-    @apply  flex justify-between w-[1240px] text-center;
+    @apply  flex justify-between w-[1240px] h-[68px] left-[100px] top-[1155px] text-center mt-[10px]   p-[10px];
   }
  
 }

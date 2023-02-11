@@ -132,10 +132,10 @@ const SignUp = () => {
             </p>
           </div>
           <div>
-            <p>Loyalbaze is almost here.</p>
+            <p className="text-[20px] leading-[27px] font-[700px] w-[231px] h-[27px]">Loyalbaze is almost here.</p>
           </div>
           <div>
-            <p>+234 903 618 9485</p>
+            <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">+234 903 618 9485</p>
           </div>
         </div>
       </div>
