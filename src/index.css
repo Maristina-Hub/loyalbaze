@@ -2,48 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Satoshi Black";
+  src: local("Satoshi Black"),
+    url("./font/Satoshi-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi Bold";
+  src: local("Satoshi Bold"), url("./font/Satoshi-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi Italic";
+  src: local("Satoshi Italic"),
+    url("./font/Satoshi-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi Light";
+  src: local("Satoshi Light"),
+    url("./font/Satoshi-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi Medium";
+  src: local("Satoshi Medium"),
+    url("./font/Satoshi-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi Regular";
+  src: local("Satoshi Regular"),
+    url("./font/Satoshi-Regular.otf") format("opentype");
+}
+
 @layer base {
   h1 {
     @apply text-2xl;
+    font-family: "Satoshi Bold";
   }
-  h2 {
-    @apply text-xl;
-  }
-}
 
+}
 
 @layer components {
   .body {
-    @apply text-white w-[100%] ;
+    @apply text-white w-[100%];
+    font-family: "Satoshi Regular";
   }
   .card {
-    @apply h-[100vh] w-[100%] bg-[#121B27];
+    @apply h-[120vh] w-[100%] bg-[#121B27];
   }
   .card2 {
-    @apply h-[120vh] w-[100%px] bg-[#2562b0] ;
+    @apply h-[120vh] w-[100%px] bg-[#2562b0];
   }
-  
 
   .btn {
-    @apply rounded-full py-2 px-3  text-xs cursor-pointer tracking-wider;
+    @apply rounded-full py-2 px-3 mt-[8px] w-[443px] h-[52px] text-xs cursor-pointer tracking-wider  bg-gradient-to-r from-[#5404FF] to-[#BD3BD2];
+  }
+  .btn2 {
+    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500 ;
   }
   .form {
     @apply flex flex-col gap-3  w-[633px] h-[90vh];
   }
 
   .input {
-    @apply rounded shadow-2xl p-2 w-[494px] h-[53px];
+    @apply rounded shadow-2xl p-2 w-[443px] h-[52px] mt-[8px] bg-[#121B27] border border-[#FFFFFF];
   }
   .textarea {
     @apply w-[494px] h-[128px]  rounded shadow-2xl p-[10px];
   }
-  .hr{
-    @apply w-[1240px] border m-auto border-[green] mt-6 flex justify-center
+  .hr {
+    @apply w-[1240px] border m-auto border-[green] mt-6 flex justify-center;
   }
-
-  @font-face {
-    font-family: myFirstFont;
-    src: local(sansation_light.woff);
-  }
-  
+ 
 }
