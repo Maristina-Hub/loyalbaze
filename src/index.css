@@ -72,7 +72,7 @@
     @apply w-[1240px] border left-[100px] top-[1155px]  border-[#FFFFFF] mt-6 flex justify-center items-center;
   }
   .footer {
-    @apply  flex justify-between w-[1240px] h-[68px] left-[100px] top-[1155px] text-center mt-[10px]   p-[10px];
+    @apply  flex justify-between w-[1240px] h-[68px] left-[100px] top-[1155px] text-center mt-[10px] p-[10px];
   }
  
 }

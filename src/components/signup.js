@@ -9,7 +9,7 @@ const SignUp = () => {
             <h1 className="flex flex-row h-[62px]  m-[4px]">
               <span className="text-[48px]"> I </span>
               <span className="top-[12.93%] bottom-[12.91%] left-[8.33%x] right-[8.33%] m-[4px] ">
-                <img src={require("../img/Vector.svg").default} alt="" />
+                <img src={require("../img/heart.svg").default} alt="" />
               </span>
               <span className="w-[178px] text-[48px]">yalbaze</span>
             </h1>
@@ -45,8 +45,15 @@ const SignUp = () => {
             />
             <button className="btn">Get early access</button>
 
-            <div className="mt-[8px]  ">
-              <p className=" "> +57 Joined</p>
+            <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px]">
+                <div className="flex border flex-row justify-between items-start w-[110px] h-[32px] overflow-visible">
+                    <span><img src={require("../img/G.svg").default} alt="" /></span>
+                    <span><img src={require("../img/O.svg").default} alt="" /></span>
+                    <span><img src={require("../img/U.svg").default} alt="" /></span>
+                    <span><img src={require("../img/M.svg").default} alt="" /></span>
+                
+                </div>
+              <div><p className="border text-[16px] leading-[22px] text-center h-[22px] w-[84px] "> +57 Joined</p></div>
             </div>
           </div>
         </div>
@@ -125,20 +132,31 @@ const SignUp = () => {
         </div>
         <hr className="hr " />
         <div className="footer">
-          <div className="flex ">
-          <span><img src={require("../img/Vector2.svg").default} alt="" /></span>
+          <div className="flex  justify-between items-center ">
+            <span>
+              <img src={require("../img/Vector2.svg").default} alt="" className="w-[21.5px] h-[20.22px] top-[2.53px] left-[1.53px]"/>
+            </span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[287px] h-[44px]">
               2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos,
               Nigeria.
             </p>
-           
           </div>
-          <div>
-            <p className="text-[20px] leading-[27px] font-[700px] w-[231px] h-[27px]">Loyalbaze is almost here.</p>
+          <div className="flex  justify-between items-center ">
+            <p className="text-[20px] leading-[27px] font-[700px] w-[231px] h-[27px]">
+              Loyalbaze is almost here.
+            </p>
           </div>
-          <div className="flex ">
-          <span><img src={require("../img/Vector3.svg").default} alt="" /></span>
-            <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">+234 903 618 9485</p>
+          <div className="flex  justify-between items-center ">
+            <span>
+              <img
+                src={require("../img/Vector3.svg").default}
+                alt=""
+                className="w-[20px] h-[20px] top-[2px] left-[2px]"
+              />
+            </span>
+            <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">
+              +234 903 618 9485
+            </p>
           </div>
         </div>
       </div>
