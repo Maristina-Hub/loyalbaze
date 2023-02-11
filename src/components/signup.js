@@ -125,16 +125,19 @@ const SignUp = () => {
         </div>
         <hr className="hr " />
         <div className="footer">
-          <div>
+          <div className="flex ">
+          <span><img src={require("../img/Vector2.svg").default} alt="" /></span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[287px] h-[44px]">
               2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos,
               Nigeria.
             </p>
+           
           </div>
           <div>
             <p className="text-[20px] leading-[27px] font-[700px] w-[231px] h-[27px]">Loyalbaze is almost here.</p>
           </div>
-          <div>
+          <div className="flex ">
+          <span><img src={require("../img/Vector3.svg").default} alt="" /></span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">+234 903 618 9485</p>
           </div>
         </div>
