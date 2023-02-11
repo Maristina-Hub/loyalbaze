@@ -8,9 +8,9 @@ const SignUp = () => {
           <div className=" w-[231px] h-[62px] m-[4px] p-[10px]">
             <h1 className="flex flex-row h-[62px]  m-[4px]">
               <span className="text-[48px]"> I </span>
-              <span className="top-[12.93%] bottom-[12.91%] left-[8.33%x] right-[8.33%] m-[4px] ">
-                <img src={require("../img/heart.svg").default} alt="" />
-              </span>
+              
+                <img src={require("../img/heart.svg").default} alt="" className="w-[40px] h-[40px] top-[11px] left-[13px]"/>
+              
               <span className="w-[178px] text-[48px]">yalbaze</span>
             </h1>
           </div>
@@ -35,7 +35,7 @@ const SignUp = () => {
               type="text"
               name="name"
               placeholder="Tell us your name "
-              className="input"
+              className="input mb-[15px]"
             />
             <input
               type="email"
@@ -45,23 +45,23 @@ const SignUp = () => {
             />
             <button className="btn">Get early access</button>
 
-            <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px]">
-                <div className="flex border flex-row justify-between items-start w-[110px] h-[32px] overflow-visible">
-                    <span><img src={require("../img/G.svg").default} alt="" /></span>
-                    <span><img src={require("../img/O.svg").default} alt="" /></span>
-                    <span><img src={require("../img/U.svg").default} alt="" /></span>
-                    <span><img src={require("../img/M.svg").default} alt="" /></span>
+            <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px] ">
+                <div className="flex  flex-row justify-between items-start w-[110px] h-[32px] overflow-visible">
+                    <span><img src={require("../img/G.svg").default} alt="" className="z-30" /></span>
+                    <span><img src={require("../img/O.svg").default} alt="" className="z-20" /></span>
+                    <span><img src={require("../img/U.svg").default} alt="" className="z-10"/></span>
+                    <span><img src={require("../img/M.svg").default} alt="" className="z-0" /></span>
                 
                 </div>
-              <div><p className="border text-[16px] leading-[22px] text-center h-[22px] w-[84px] "> +57 Joined</p></div>
+              <div><p className=" text-[16px] leading-[22px] text-center h-[22px] w-[84px] "> +57 Joined</p></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="card2 p-[10px]">
+      <div className="card2 p-[10px] ">
         <div className="flex justify-evenly">
-          <div className="h-[100vh] w-[500px] p-[100px] mr-[100px] ">
+          <div className="h-[100vh] w-[500px] p-[100px] mr-[100px] mt-[150px]">
             <h1 className="m-auto text-center text-[64px] w-[442px] h-[83px] leading-[130%]">
               Priority Access
             </h1>
@@ -120,10 +120,8 @@ const SignUp = () => {
               </select>
               <textarea
                 type="text"
-                rows={30}
-                cols={30}
                 name="message"
-                className="textarea "
+                className="textarea"
                 placeholder="Drop a message....."
               />
               <button className="btn">Send Request</button>

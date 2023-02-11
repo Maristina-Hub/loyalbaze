@@ -37,7 +37,6 @@
     @apply text-2xl;
     font-family: "Satoshi Bold";
   }
-
 }
 
 @layer components {
@@ -46,33 +45,33 @@
     font-family: "Satoshi Regular";
   }
   .card {
-    @apply h-[120vh] w-[100%] bg-[#121B27] ;
+    @apply h-[150vh] w-[100%] bg-[#121B27];
   }
   .card2 {
-    @apply h-[120vh] w-[100%] bg-[#121B27] ;
+    @apply h-[155vh] w-[100%] bg-[#121B27];
   }
 
   .btn {
     @apply rounded-full py-2 px-3 mt-[8px] w-[443px] h-[52px] text-xs cursor-pointer tracking-wider  bg-gradient-to-r from-[#5404FF] to-[#BD3BD2];
   }
   .btn2 {
-    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500 ;
+    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500;
   }
   .form {
-    @apply flex flex-col justify-center items-center p-4  gap-[10px] w-[633px] h-[90vh]  ;
+    @apply flex flex-col justify-center items-center p-4  gap-[10px] w-[633px] h-[837px];
   }
 
   .input {
-    @apply rounded  text-white shadow-2xl p-2 w-[443px] h-[52px] mt-[8px] bg-[#121B27] border-[1px] border-[#FFFFFF];
+    @apply rounded  text-white shadow-2xl p-2 w-[494px] h-[53px] top-[382px] left-[70px] bg-[#121B27] border-[1px] border-[#FFFFFF];
   }
+ 
   .textarea {
-    @apply w-[443px] h-[128px]  rounded shadow-2xl p-[10px] bg-[#121B27] border-[1px] border-[#FFFFFF] ;
+    @apply w-[494px] h-[128px]  top-[555px] left-[70px] p-[16px] gap-[10px] rounded  bg-[#121B27] border-[1px] border-[#FFFFFF]  ;
   }
   .hr {
     @apply w-[1240px] border left-[100px] top-[1155px]  border-[#FFFFFF] mt-6 flex justify-center items-center;
   }
   .footer {
-    @apply  flex justify-between w-[1240px] h-[68px] left-[100px] top-[1155px] text-center mt-[10px] p-[10px];
+    @apply flex justify-between w-[1240px] h-[68px] left-[100px] top-[1155px] text-center mt-[10px] p-[10px];
   }
- 
 }
