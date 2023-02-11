@@ -45,10 +45,10 @@
     font-family: "Satoshi Regular";
   }
   .card {
-    @apply h-[150vh] w-[100%] bg-[#121B27];
+    @apply lg:h-[150vh] lg:w-[100%] bg-[#121B27];
   }
   .card2 {
-    @apply h-[155vh] w-[100%] bg-[#121B27];
+    @apply lg:h-[155vh] lg:w-[100%] bg-[#121B27];
   }
 
   .btn {

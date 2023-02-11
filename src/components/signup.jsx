@@ -1,16 +1,26 @@
 import React from "react";
+import signupBG from './signupBG'
 
 const SignUp = () => {
   return (
     <div className="body">
+        {signupBG.map((ball) => (
+      <div id={ball.id} style={ball.ballStyle}>
+        
+      </div>
+    ))}
       <div className="card">
         <div className=" flex justify-between mx-[60px] pt-6">
-          <div className=" w-[231px] h-[62px] m-[4px] p-[10px]">
+          <div className=" w-[231px] h-[62px] m-[4px] p-[10px] ">
             <h1 className="flex flex-row h-[62px]  m-[4px]">
               <span className="text-[48px]"> I </span>
-              
-                <img src={require("../img/heart.svg").default} alt="" className="w-[40px] h-[40px] top-[11px] left-[13px]"/>
-              
+
+              <img
+                src={require("../img/heart.svg").default}
+                alt=""
+                className="w-[40px] h-[40px] top-[11px] left-[13px]"
+              />
+
               <span className="w-[178px] text-[48px]">yalbaze</span>
             </h1>
           </div>
@@ -19,7 +29,7 @@ const SignUp = () => {
           </div>
         </div>
         <div className="m-auto mt-[12px] mx-[64px] pt-8">
-          <h1 className="text-center m-auto  mt-[12px] text-[64px] h-[166px] w-[802px] leading-[83.2px]">
+          <h1 className="text-center m-auto  mt-[12px] lg:text-[64px] h-[166px] w-[802px] leading-[83.2px]">
             Turn your best customers into{" "}
             <span className="text-[#A75FD2]">Loyal fans</span>
           </h1>
@@ -46,14 +56,42 @@ const SignUp = () => {
             <button className="btn">Get early access</button>
 
             <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px] ">
-                <div className="flex  flex-row justify-between items-start w-[110px] h-[32px] overflow-visible">
-                    <span><img src={require("../img/G.svg").default} alt="" className="z-30" /></span>
-                    <span><img src={require("../img/O.svg").default} alt="" className="z-20" /></span>
-                    <span><img src={require("../img/U.svg").default} alt="" className="z-10"/></span>
-                    <span><img src={require("../img/M.svg").default} alt="" className="z-0" /></span>
-                
-                </div>
-              <div><p className=" text-[16px] leading-[22px] text-center h-[22px] w-[84px] "> +57 Joined</p></div>
+              <div className="flex  flex-row justify-between items-start w-[110px] h-[32px]">
+                <span>
+                  <img
+                    src={require("../img/G.svg").default}
+                    alt=""
+                    className="z-30"
+                  />
+                </span>
+                <span>
+                  <img
+                    src={require("../img/O.svg").default}
+                    alt=""
+                    className="z-20"
+                  />
+                </span>
+                <span>
+                  <img
+                    src={require("../img/U.svg").default}
+                    alt=""
+                    className="z-10"
+                  />
+                </span>
+                <span>
+                  <img
+                    src={require("../img/M.svg").default}
+                    alt=""
+                    className="z-0"
+                  />
+                </span>
+              </div>
+              <div>
+                <p className=" text-[16px] leading-[22px] text-center h-[22px] w-[84px] ">
+                  {" "}
+                  +57 Joined
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -132,7 +170,11 @@ const SignUp = () => {
         <div className="footer">
           <div className="flex  justify-between items-center ">
             <span>
-              <img src={require("../img/Vector2.svg").default} alt="" className="w-[21.5px] h-[20.22px] top-[2.53px] left-[1.53px]"/>
+              <img
+                src={require("../img/Vector2.svg").default}
+                alt=""
+                className="w-[21.5px] h-[20.22px] top-[2.53px] left-[1.53px]"
+              />
             </span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[287px] h-[44px]">
               2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos,
