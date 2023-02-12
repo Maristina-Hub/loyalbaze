@@ -11,8 +11,8 @@ const SignUp = () => {
        
       </div>
     ))}
-        <div className=" flex justify-between mx-[60px] pt-6">
-          <div className=" w-[231px] h-[62px] m-[4px] p-[10px] ">
+        <div className=" flex justify-between mx-[60px] pt-6 mb-16">
+          <div className=" w-[231px] h-[62px] m-[4px] p-[10px]   ">
             <h1 className="flex flex-row h-[62px]  m-[4px]">
               <span className="text-[48px]"> I </span>
 
