@@ -42,7 +42,7 @@
 
 @layer components {
   .body {
-    @apply text-white w-[100%];
+    @apply text-white lg:w-[100%] md:w-[75%] sm:w-[50%] ;
     font-family: "Satoshi Regular";
   }
   .card {

@@ -26,7 +26,7 @@ const SignUp = () => {
             </h1>
           </div>
           <div className="m-2  ">
-            <button className="btn2">Get Priority Access</button>
+            <button className="btn2"><a href="/#form">Get Priority Access</a></button>
           </div>
         </div>
         <div className="m-auto mt-[12px] mx-[64px] pt-8">
@@ -118,7 +118,7 @@ const SignUp = () => {
             </p>
           </div>
           <div className=" bg-[#1D2939] rounded-[20px] ">
-            <form action="" className="form">
+            <form action="" className="form" id="form">
               <h3 className="text-[24px] text-left font-bold text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] mr-[180px]">
                 Book a Consultation with us
               </h3>
