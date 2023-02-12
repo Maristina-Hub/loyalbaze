@@ -4,12 +4,12 @@ import signupBG from './signupBG'
 const SignUp = () => {
   return (
     <div className="body">
-        {signupBG.map((ball) => (
+     
+      <div className="card">
+      {signupBG.map((ball) => (
       <div id={ball.id} style={ball.ballStyle}>
-        
       </div>
     ))}
-      <div className="card">
         <div className=" flex justify-between mx-[60px] pt-6">
           <div className=" w-[231px] h-[62px] m-[4px] p-[10px] ">
             <h1 className="flex flex-row h-[62px]  m-[4px]">
@@ -188,11 +188,7 @@ const SignUp = () => {
           </div>
           <div className="flex  justify-between items-center ">
             <span>
-              <img
-                src={require("../img/Vector3.svg").default}
-                alt=""
-                className="w-[20px] h-[20px] top-[2px] left-[2px]"
-              />
+             \
             </span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">
               +234 903 618 9485
