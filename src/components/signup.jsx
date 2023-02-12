@@ -7,7 +7,8 @@ const SignUp = () => {
      
       <div className="card">
       {signupBG.map((ball) => (
-      <div id={ball.id} style={ball.ballStyle}>
+      <div id={ball.id} style={ball.ballStyle}  src={ball.Image} >
+       
       </div>
     ))}
         <div className=" flex justify-between mx-[60px] pt-6">
@@ -99,7 +100,7 @@ const SignUp = () => {
 
       <div className="card2 p-[10px] ">
         <div className="flex justify-evenly">
-          <div className="h-[100vh] w-[500px] p-[100px] mr-[100px] mt-[150px]">
+          <div className="h-[100vh] w-[500px] p-[100px] mr-[100px] mt-[110px]">
             <h1 className="m-auto text-center text-[64px] w-[442px] h-[83px] leading-[130%]">
               Priority Access
             </h1>
@@ -118,8 +119,7 @@ const SignUp = () => {
           </div>
           <div className=" bg-[#1D2939] rounded-[20px] ">
             <form action="" className="form">
-              <div></div>
-              <h3 className="text-[24px] text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] text-center">
+              <h3 className="text-[24px] text-left font-bold text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] mr-[180px]">
                 Book a Consultation with us
               </h3>
               <input
@@ -188,7 +188,11 @@ const SignUp = () => {
           </div>
           <div className="flex  justify-between items-center ">
             <span>
-             \
+            <img
+                src={require("../img/Vector3.svg").default}
+                alt=""
+                className="w-[20px] h-[20px] top-[2px] left-[2px]"
+              />
             </span>
             <p className="text-[16px] leading-[22px] font-[400px] w-[158px] h-[22px]">
               +234 903 618 9485
