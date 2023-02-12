@@ -75,7 +75,7 @@ const signupBG = [
       backgroundColor: " linear-gradient(92.7deg, #5404FF 7.9%, #BA2AD1 88.1%)",
       backgroundRepeat: "no-repeat",
       position: "absolute",
-      top: "500px",
+      top: "530px",
       right: "220px",
       transform: "rotate(10deg)",
     },

@@ -1,16 +1,13 @@
 import React from "react";
-import signupBG from './signupBG'
+import signupBG from "./signupBG";
 
 const SignUp = () => {
   return (
     <div className="body">
-     
       <div className="card">
-      {signupBG.map((ball) => (
-      <div id={ball.id} style={ball.ballStyle}  src={ball.Image} >
-       
-      </div>
-    ))}
+        {signupBG.map((ball) => (
+          <div id={ball.id} style={ball.ballStyle} src={ball.Image}></div>
+        ))}
         <div className=" flex justify-between mx-[60px] pt-6 mb-16">
           <div className=" w-[231px] h-[62px] m-[4px] p-[10px]   ">
             <h1 className="flex flex-row h-[62px]  m-[4px]">
@@ -26,7 +23,9 @@ const SignUp = () => {
             </h1>
           </div>
           <div className="m-2  ">
-            <button className="btn2"><a href="/#form">Get Priority Access</a></button>
+            <button className="btn2">
+              <a href="/#form">Get Priority Access</a>
+            </button>
           </div>
         </div>
         <div className="m-auto mt-[12px] mx-[64px] pt-8">
@@ -34,7 +33,7 @@ const SignUp = () => {
             Turn your best customers into{" "}
             <span className="text-[#A75FD2]">Loyal fans</span>
           </h1>
-          <p className="m-auto text-center text-[24px] h-[131px] w-[938px] leading-[130%]">
+          <p className="m-auto text-center text-[24px] h-[131px] w-[938px] leading-[130%]  mt-4">
             Loyalbaze, empowers businesses to offer digital, mobile-first
             loyalty programs to their customers. With our AI Powered platform,
             you can easily create and manage custom loyalty and rewards
@@ -42,35 +41,38 @@ const SignUp = () => {
             improve your business. Sign up now to get early access.
           </p>
           <div className="mt-[10px] flex flex-col justify-center items-center px-[14px] py[12px] gap[8px] text-center">
+            <div className="inputBox">
+            <span>
+              <img src={require("../img/profilecircle.svg").default} alt="" className="p-3" />
+            </span>
             <input
               type="text"
               name="name"
               placeholder="Tell us your name "
-              className="input mb-[15px]"
+              className="input1"
             />
+            </div>
+            <div className="inputBox">
+            <span>
+              <img src={require("../img/profilecircle.svg").default} alt="" className="p-3" />
+            </span>
             <input
               type="email"
               name="name"
               placeholder="Enter your email address "
-              className="input"
+              className="input1"
             />
+            </div>
+           
             <button className="btn">Get early access</button>
 
             <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px] ">
               <div className="flex  flex-row justify-between items-start w-[110px] h-[32px]">
                 <span>
-                  <img
-                    src={require("../img/G.svg").default}
-                    alt=""
-                    className="z-30"
-                  />
+                  <img src={require("../img/G.svg").default} alt="" />
                 </span>
                 <span>
-                  <img
-                    src={require("../img/O.svg").default}
-                    alt=""
-                    className="z-20"
-                  />
+                  <img src={require("../img/O.svg").default} alt="" />
                 </span>
                 <span>
                   <img
@@ -80,11 +82,7 @@ const SignUp = () => {
                   />
                 </span>
                 <span>
-                  <img
-                    src={require("../img/M.svg").default}
-                    alt=""
-                    className="z-0"
-                  />
+                  <img src={require("../img/M.svg").default} alt="" />
                 </span>
               </div>
               <div>
@@ -188,7 +186,7 @@ const SignUp = () => {
           </div>
           <div className="flex  justify-between items-center ">
             <span>
-            <img
+              <img
                 src={require("../img/Vector3.svg").default}
                 alt=""
                 className="w-[20px] h-[20px] top-[2px] left-[2px]"
