@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import signupBG from "./signupBG";
+import PopUp from "./popup";
 
 const SignUp = () => {
+  const [showPopUp, setShowPopUp] = useState(false)
+
+  const closePopUp = () => setShowPopUp(false)
   return (
     <div className="body">
       <div className="card">
@@ -72,35 +76,9 @@ const SignUp = () => {
               />
             </div>
 
-            <button className="btn">Get early access</button>
+            <button className="btn" onClick={() => setShowPopUp(true)}>Get early access</button>
 
-            {/* modal */}
-            <div className="w-[100%] h-[200vh] bg-[#fffdfd37]  absolute top-0 ">
-              <div>
-              <img src={require("../img/close_icon.svg").default} alt=""  className="w-[40px] h-[40px] mt-[20px]  absolute right-10" />
-              </div>
-              <div className=" bg-[#1D2939] rounded-[20px] w-[446px]  h-[475px] justify-center items-center  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">
-                <div className="flex flex-col justify-center items-center p-[50px] m-auto ">
-                  <img
-                    src={require("../img/congrats.svg").default}
-                    alt=""
-                    className="h-[88px] w-[88px] top-[102px] left-[179px] mb-[20px]"
-                  />
-
-                  <div>
-                    <h2 className=" flex justify-center font-bold text-[24px] leading-[32.4px] w-[336px] h-[32px]">
-                      Congratulations
-                    </h2>
-
-                    <p className=" flex justify-center text-center font-normal text-[16px] leading-[22px] mt-2">
-                      Great move! You're one step closer to getting your hands
-                      on the product. Please check your mail for more
-                      information.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <PopUp visible={showPopUp} onClose={closePopUp} />
 
             <div className="mt-[8px] flex  flex-row justify-center items-center gap-[12px] w-[206px] h-[32px] ">
               <div className="flex  flex-row justify-between items-start w-[110px] h-[32px]">
@@ -234,6 +212,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
