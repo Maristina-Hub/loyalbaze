@@ -58,6 +58,7 @@ const SignUp = () => {
                 name="name"
                 placeholder="Tell us your name "
                 className="input1"
+                required
               />
             </div>
             <div className="inputBox">
@@ -73,6 +74,7 @@ const SignUp = () => {
                 name="name"
                 placeholder="Enter your email address "
                 className="input1"
+                required
               />
             </div>
 
