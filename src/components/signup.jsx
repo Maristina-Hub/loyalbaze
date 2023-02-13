@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import signupBG from "./signupBG";
 
 const SignUp = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="body">
       <div className="card">
@@ -73,19 +72,14 @@ const SignUp = () => {
               />
             </div>
 
-            <button className="btn" onClick={() => setIsOpen(true)}>
-              Get early access
-            </button>
+            <button className="btn">Get early access</button>
 
             {/* modal */}
             <div className="w-[100%] h-[200vh] bg-[#fffdfd37]  absolute top-0 ">
               <div>
-            <img src={require("../img/close_icon.svg").default} alt=""  className="w-[30px] h-[30px] mt-[20px]  absolute right-10 bg-white" />
-                {/* <button >
-                Close Pop-up 
-                </button> */}
+              <img src={require("../img/close_icon.svg").default} alt=""  className="w-[40px] h-[40px] mt-[20px]  absolute right-10" />
               </div>
-              <div className=" bg-[#1D2939] rounded-[20px] w-[446px]  h-[475px] justify-center items-center  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden">
+              <div className=" bg-[#1D2939] rounded-[20px] w-[446px]  h-[475px] justify-center items-center  absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">
                 <div className="flex flex-col justify-center items-center p-[50px] m-auto ">
                   <img
                     src={require("../img/congrats.svg").default}
