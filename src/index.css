@@ -37,6 +37,13 @@
     @apply text-2xl;
     font-family: "Satoshi Bold";
   }
+  /* i {
+    @apply text-2xl;
+    font-family: "Satoshi Bold";
+    -webkit-box-shadow: "0 0 0 50px white inset";
+    -webkit-text-fill-color: #333;
+  } */
+
 }
 
 @layer components {
@@ -55,7 +62,7 @@
     @apply rounded-full py-2 px-3 mt-[8px] w-[443px] h-[52px] font-bold text-[16px] cursor-pointer tracking-wider  bg-gradient-to-r from-[#5404FF] to-[#BD3BD2];
   }
   .btn2 {
-    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500;
+    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px]  md:w-[150px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500;
   }
   .form {
     @apply flex flex-col pt-10 justify-start items-center gap-[10px] w-[633px] h-[780px];

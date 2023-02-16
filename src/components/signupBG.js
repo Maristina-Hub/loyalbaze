@@ -79,6 +79,7 @@ const signupBG = [
       right: "220px",
       transform: "rotate(10deg)",
     },
+    
   },
   {
     id: 5,

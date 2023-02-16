@@ -58,6 +58,7 @@ const SignUp = () => {
                 name="name"
                 placeholder="Tell us your name "
                 className="input1"
+                autoComplete="off"
                 required
               />
             </div>
@@ -73,6 +74,7 @@ const SignUp = () => {
                 type="email"
                 name="name"
                 placeholder="Enter your email address "
+                autoComplete="off"
                 className="input1"
                 required
               />
@@ -128,7 +130,7 @@ const SignUp = () => {
               customers and drive sales with Loyalbaze. Skip the waitlist and
               get exclusive priority access to LoyalBaze. Limited slots
               available. Please tell us a bit about your business and needs and
-              of our consultants will be in touch Immediately!
+              of our consultants will be in touch Immediately!
             </p>
           </div>
           <div className=" bg-[#1D2939] rounded-[20px] ">
@@ -141,28 +143,26 @@ const SignUp = () => {
                 name="name"
                 placeholder=" Enter your full name"
                 className="input "
-              />
-              <input
-                type="text"
-                name="name"
-                placeholder=" Mobile number"
-                className="input"
+                autoComplete="off"
               />
               <input
                 type="email"
                 name="email"
+                autoComplete="off"
                 placeholder="Enter your work email"
                 className="input"
               />
               <input
                 type="text"
                 name="name"
+                autoComplete="off"
                 placeholder=" Mobile number"
                 className="input"
               />
               <input
                 type="text"
                 name="name"
+                autoComplete="off"
                 placeholder=" Company Name "
                 className="input"
               />
