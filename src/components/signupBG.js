@@ -1,9 +1,10 @@
 import Spring from "../img/Vector3.png";
 import Star from "../img/Star 4.png";
-import Line_1 from "../img/Vector 263.png"
-import Line_2 from "../img/Vector 264.png"
-import Line_3 from "../img/Vector 265.png"
-import Line_4 from "../img/Vector 266.png"
+import Ball from "../img/ball.png";
+import Line_1 from "../img/Vector 263.png";
+import Line_2 from "../img/Vector 264.png";
+import Line_3 from "../img/Vector 265.png";
+import Line_4 from "../img/Vector 266.png";
 
 const signupBG = [
   {
@@ -33,22 +34,27 @@ const signupBG = [
       top: "90px",
       right: "290px",
       borderRadius: "100%",
-      
     },
   },
   {
     id: 2,
     ballStyle: {
-      width: "400px",
-      height: "200px",
-      display: "block",
-      background: " linear-gradient(92.7deg, #5404FF 7.9%, #BA2AD1 88.1%)",
-      boxShadow: "inset 4px 8px 200px #001D6E ",
+      backgroundImage: `url(${Ball})`,
+      width: "200px",
+      height: "400px",
+      backgroundColor: "linear-gradient(92.7deg, #5404FF 7.9%, #BA2AD1 88.1%)",
+      boxShadow: "inset 4px 8px 200px #001D6E",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      overFlow: "hidden",
       position: "absolute",
+      display: "block",
+      zIndex: "100",
       top: "382px",
-      right: "-100px",
-      borderRadius: " 200px 200px 0 0",
-      transform: "rotate(-90deg)",
+      right: "-0px",
+      // borderRadius: "50%",
+      filter: "blur(15px)",
+      borderRadius: " 200px  0  0 200px ",
     },
   },
   {
@@ -60,10 +66,9 @@ const signupBG = [
       background: " linear-gradient(92.7deg, #5404FF 7.9%, #BA2AD1 88.1%)",
       boxShadow: "inset 1.02px 2.04px 51px #001D6E",
       position: "absolute",
-      top: "950px",
+      top: "1180px",
       right: "1120px",
       borderRadius: "100%",
-      // border: "2px  solid red",
     },
   },
   {
@@ -79,7 +84,6 @@ const signupBG = [
       right: "220px",
       transform: "rotate(10deg)",
     },
-    
   },
   {
     id: 5,
@@ -121,7 +125,7 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "750px",
+      top: "900px",
       left: "157px",
       borderRadius: "1px",
     },
@@ -136,13 +140,12 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "700px",
+      top: "800px",
       left: "1260px",
       borderRadius: "1px",
-     
     },
-    },
-  
+  },
+
   {
     id: 9,
     ballStyle: {
@@ -153,10 +156,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "1100px",
+      top: "1320px",
       left: "500px",
       borderRadius: "1px",
-      // border: "2px  solid red",
     },
   },
   {
@@ -169,7 +171,7 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "1520px",
+      top: "1750px",
       left: "580px",
       borderRadius: "1px",
     },
@@ -184,7 +186,7 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "1750px",
+      top: "1940px",
       left: "1220px",
       borderRadius: "1px",
     },
@@ -199,12 +201,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      // top: "1466px", 566
-      // left: "702px", 102
-      top: "900px",
+      top: "1200px",
       left: "600px",
       borderRadius: "1px",
-      // border: "1px solid blue",
     },
   },
   {
@@ -217,12 +216,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      // top: "1467px",
-      // left: "719px",
-      top: "901px",
+      top: "1201px",
       left: "617px",
       borderRadius: "1px",
-      // border: "2px solid green",
     },
   },
   {
@@ -235,10 +231,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "914px",
+      top: "1214px",
       left: "617px",
       borderRad65ius: "1px",
-      // border: "1px solid yellow",
     },
   },
   {
@@ -251,10 +246,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "924px",
+      top: "1224px",
       left: "600px",
       borderRadius: "1px",
-      // border: "1px solid red",
     },
   },
   {
@@ -267,12 +261,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      // top: "1466px", 566
-      // left: "702px", 102
-      top: "800px",
+      top: "1150px",
       left: "1100px",
       borderRadius: "1px",
-      // border: "1px solid blue",
     },
   },
   {
@@ -285,12 +276,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      // top: "1467px",
-      // left: "719px",
-      top: "801px",
+      top: "1151px",
       left: "1117px",
       borderRadius: "1px",
-      // border: "2px solid green",
     },
   },
   {
@@ -303,10 +291,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "814px",
+      top: "1164px",
       left: "1117px",
       borderRad65ius: "1px",
-      // border: "1px solid yellow",
     },
   },
   {
@@ -319,10 +306,9 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "824px",
+      top: "1174px",
       left: "1100px",
       borderRadius: "1px",
-      // border: "1px solid red",
     },
   },
 ];

@@ -10,12 +10,12 @@ const SignUp = () => {
     <div className="body">
       <div className="card">
         {signupBG.map((ball) => (
-          <div id={ball.id} style={ball.ballStyle} src={ball.Image}></div>
+          <div id={ball.id} style={ball.ballStyle} src={ball.Image} className="hidden md:flex"></div>
         ))}
         <div className=" flex justify-between mx-[60px] pt-6 mb-16">
-          <div className=" w-[231px] h-[62px] m-[4px] p-[10px]   ">
-            <h1 className="flex flex-row h-[62px]  m-[4px]">
-              <span className="text-[48px]"> I </span>
+          <div className=" w-[231px] h-[62px] m-[4px] p-[2px] ">
+            <h1 className="flex flex-row h-[62px] items-center">
+              <span className="text-[48px] "> I </span>
 
               <img
                 src={require("../img/heart.svg").default}
@@ -33,7 +33,7 @@ const SignUp = () => {
           </div>
         </div>
         <div className="m-auto mt-[12px] mx-[64px] pt-8">
-          <h1 className="text-center m-auto  mt-[12px] lg:text-[64px] h-[166px] w-[802px] leading-[83.2px]">
+          <h1 className="text-center m-auto  mt-[12px] text-[64px] h-[166px] w-[802px] leading-[83.2px]">
             Turn your best customers into{" "}
             <span className="text-[#A75FD2]">Loyal fans</span>
           </h1>
@@ -114,9 +114,9 @@ const SignUp = () => {
         </div>
       </div>
 
-      <div className="card2 p-[10px] ">
-        <div className="flex justify-evenly">
-          <div className="h-[100vh] w-[500px] p-[100px] mr-[100px] mt-[110px]">
+      <div className="card2 p-[10px] pt-[100px]  ">
+        <div className="flex justify-evenly ">
+          <div className="h-[100vh] w-[500px] p-[100px] mr-[200px] mt-[60px]">
             <h1 className="m-auto text-center text-[64px] w-[442px] h-[83px] leading-[130%]">
               Priority Access
             </h1>
@@ -125,7 +125,7 @@ const SignUp = () => {
               alt=""
               className="ml-[120px] w-[169px] h-[64px] top-[87px] left-[136.5px]"
             />
-            <p className="m-auto mt-[4px] w-[525px] h-[223px] top-[542px] left-[100px] text-[24px] leading-[31.2px] text-white">
+            <p className="m-auto p-2 mt-[4px] w-[525px] h-[223px] top-[542px] left-[100px] text-[24px] leading-[31.2px] text-white">
               Get ready to revolutionize the way you interact with your
               customers and drive sales with Loyalbaze. Skip the waitlist and
               get exclusive priority access to LoyalBaze. Limited slots
@@ -133,8 +133,8 @@ const SignUp = () => {
               of our consultants will be in touch Immediately!
             </p>
           </div>
-          <div className=" bg-[#1D2939] rounded-[20px] ">
-            <form action="" className="form" id="form">
+          <div className=" bg-[#1D2939] rounded-[20px] mr-20">
+            <form action="" className="form   " id="form">
               <h3 className="text-[24px] text-left font-bold text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] mr-[180px]">
                 Book a Consultation with us
               </h3>
