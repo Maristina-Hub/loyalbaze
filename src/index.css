@@ -67,7 +67,7 @@
     @apply flex flex-col pt-10 justify-start items-center gap-[10px] md:w-[633px]  h-[700px];
   }
   .inputBox {
-    @apply flex justify-start items-center  w-[494px] h-[53px] bg-[#121B27] border-[1px] border-[#FFFFFF] mb-3 rounded-[8px];
+    @apply flex justify-start items-center  w-[494px] h-[53px] bg-[#121B27] border-[1px] border-[#FFFFFF] mb-3 mt-8 rounded-[8px];
   }
   .input {
     @apply rounded mt-2 text-white shadow-2xl p-2 w-[470px] md:w-[494px] h-[53px] top-[382px] left-[70px] bg-[#121B27] border-[1px] border-[#FFFFFF];

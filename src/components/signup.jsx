@@ -65,7 +65,7 @@ const SignUp = () => {
             <div className="inputBox">
               <span>
                 <img
-                  src={require("../img/profilecircle.svg").default}
+                  src={require("../img/Icon.svg").default}
                   alt=""
                   className="p-3"
                 />
@@ -80,7 +80,7 @@ const SignUp = () => {
               />
             </div>
 
-            <button className="btn" onClick={() => setShowPopUp(true)}>Get early access</button>
+            <button className="btn mt-4 mb-4" onClick={() => setShowPopUp(true)}>Get early access</button>
 
             <PopUp visible={showPopUp} onClose={closePopUp} />
 
