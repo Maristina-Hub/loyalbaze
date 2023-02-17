@@ -51,36 +51,36 @@
     font-family: "Satoshi Regular";
   }
   .card {
-    @apply h-[130vh] w-[100vw] bg-[#121B27] md:w-[100%] md:h-[180vh];
+    @apply h-[100vh] w-[100vw] bg-[#121B27] md:w-[100%] md:h-[180vh];
   }
   .card2 {
-    @apply h-[300vh] w-[100vw] bg-[#121B27] md:w-[100%] md:h-[160vh];
+    @apply h-[180vh] w-[100vw] bg-[#121B27] md:w-[100%] md:h-[160vh];
   }
 
   .btn {
     @apply rounded-full py-2 px-3 mt-[8px] w-[443px] h-[52px] font-bold text-[16px] cursor-pointer tracking-wider  bg-gradient-to-r from-[#5404FF] to-[#BD3BD2];
   }
   .btn2 {
-    @apply rounded-full py-2 px-3 mt-[8px] w-[190px] h-[50px]  md:w-[150px] text-xs cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500;
+    @apply rounded-full py-2  mt-[8px] w-[150px] h-[60px] md:h-[60px]  md:w-[180px] cursor-pointer tracking-wider border border-blue border-x-pink-500 border-t-pink-500;
   }
   .form {
     @apply flex flex-col pt-10 justify-start items-center gap-[10px] md:w-[633px]  h-[700px];
   }
   .inputBox {
-    @apply flex justify-start items-center  w-[494px] h-[53px] bg-[#121B27] border-[1px] border-[#FFFFFF] mb-3 mt-8 rounded-[8px];
+    @apply flex justify-start items-center  w-[350px] md:w-[494px] h-[53px] bg-[#121B27] border-[1px] border-[#FFFFFF] mb-3 mt-8 rounded-[8px];
   }
   .input {
-    @apply rounded mt-2 text-white shadow-2xl p-2 w-[470px] md:w-[494px] h-[53px] top-[382px] left-[70px] bg-[#121B27] border-[1px] border-[#FFFFFF];
+    @apply rounded mt-2 text-white shadow-2xl p-2 w-[350px] md:w-[494px] h-[53px] top-[382px] left-[70px] bg-[#121B27] border-[1px] border-[#FFFFFF];
   }
 
   .input1 {
     @apply bg-[#121B27] border w-[90%] h-[45px] border-none outline-none;
   }
   .textarea {
-    @apply w-[470px] md:w-[494px] mt-4 h-[128px]  top-[555px] left-[70px] p-[16px] gap-[10px] rounded  bg-[#121B27] border-[1px] border-[#FFFFFF];
+    @apply w-[350px] md:w-[494px] mt-4 h-[128px]  top-[555px] left-[70px] p-[16px] gap-[10px] rounded  bg-[#121B27] border-[1px] border-[#FFFFFF];
   }
   .hr {
-    @apply md:w-[1240px] w-[485px] border left-[100px] top-[1155px]  border-[#FFFFFF]  mt-10 md:mt-20 md:ml-8 flex justify-center items-center;
+    @apply md:w-[1240px] w-[370px]  left-[100px] top-[1155px] border border-[#FFFFFF]  mt-10 md:mt-20 md:ml-8 flex justify-center items-center;
   }
   .footer {
     @apply grid grid-cols-2  md:flex md:justify-between md:w-[1240px] md:h-[68px] h-[150px] left-[100px] top-[1155px] text-center mt-[10px] p-[10px] gap-2;

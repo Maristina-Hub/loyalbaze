@@ -13,9 +13,9 @@ const SignUp = () => {
           <div id={ball.id} style={ball.ballStyle} src={ball.Image} className="hidden md:flex"></div>
         ))}
         <div className=" flex justify-between md:mx-[60px] mx-[10px] pt-6 mb-16 ">
-          <div className=" w-[231px] h-[62px] m-[4px] p-[2px] ">
+          <div className="w-[231px] h-[62px] m-[4px] p-[2px]">
             <h1 className="flex flex-row h-[62px] items-center">
-              <span className="text-[48px] "> I </span>
+              <span className="md:text-[48px] text-[40px] "> I </span>
 
               <img
                 src={require("../img/heart.svg").default}
@@ -23,21 +23,21 @@ const SignUp = () => {
                 className="w-[40px] h-[40px] top-[11px] left-[13px]"
               />
 
-              <span className="w-[178px] text-[48px]">yalbaze</span>
+              <span className="w-[178px] md:text-[48px] text-[40px]">yalbaze</span>
             </h1>
           </div>
-          <div className="m-2  ">
+          <div className="md:m-2">
             <button className="btn2">
               <a href="/#form">Get Priority Access</a>
             </button>
           </div>
         </div>
-        <div className="m-auto mt-[12px] mx-[20px] md:mx-[64px] pt-8 ">
-          <h1 className="text-center m-auto  mt-[12px] text-[40px] tracking-tight md:text-[64px] h-[166px] w-[450px] md:w-[802px] leading-[83.2px]">
+        <div className="m-auto mt-[12px] mx-[20px] md:mx-[64px] pt-4 md:pt-8 ">
+          <h1 className="text-center m-auto mt-[12px] text-[40px] tracking-tight md:text-[64px] h-[166px] w-[350px] md:w-[802px] md:leading-[83.2px] leading-[60px] ">
             Turn your best customers into{" "}
             <span className="text-[#A75FD2]">Loyal fans</span>
           </h1>
-          <p className="m-auto text-center text-[17px] md:text-[24px] h-[131px] md:w-[938px] leading-[130%]  mt-4">
+          <p className="m-auto text-center text-[17px] md:text-[24px] md:h-[131px] h-[230px] md:w-[938px]  md:leading-[130%] leading-[160%] mt-4 ">
             Loyalbaze, empowers businesses to offer digital, mobile-first
             loyalty programs to their customers. With our AI Powered platform,
             you can easily create and manage custom loyalty and rewards
@@ -80,7 +80,7 @@ const SignUp = () => {
               />
             </div>
 
-            <button className="btn mt-4 mb-4" onClick={() => setShowPopUp(true)}>Get early access</button>
+            <button className="btn mt-4 mb-4 w-[350px] md:w-[494px]" onClick={() => setShowPopUp(true)}>Get early access</button>
 
             <PopUp visible={showPopUp} onClose={closePopUp} />
 
@@ -117,7 +117,7 @@ const SignUp = () => {
       <div className="card2 p-[10px] pt-[100px] ">
         <div className="grid md:grid-cols-3">
           <div className="md:h-[100vh]  md:w-[500px] md:p-[100px]  p-[0px] mr-[200px] mt-[60px] ">
-            <h1 className="m-auto text-center md:text-[64px] text-[60px] w-[442px] h-[83px] leading-[130%]">
+            <h1 className="md:my-0 my-4 md:py-0 py-2 md:text-center md:text-[64px] text-[53px] w-[442px] h-[83px] leading-[130%] ">
               Priority Access
             </h1>
             <img
@@ -125,7 +125,7 @@ const SignUp = () => {
               alt=""
               className="ml-[120px] w-[169px] h-[64px] top-[87px] left-[136.5px]"
             />
-            <p className="m-auto p-2 mt-[4px] md:w-[525px] h-[223px] top-[542px] left-[100px] md:text-[24px] text-[20px] leading-[31.2px] text-white">
+            <p className="p-2 mt-[4px] md:w-[525px] w-[370px] h-[223px] top-[542px] left-[100px] md:text-[24px] text-[16.5px] leading-[31.2px] text-white">
               Get ready to revolutionize the way you interact with your
               customers and drive sales with Loyalbaze. Skip the waitlist and
               get exclusive priority access to LoyalBaze. Limited slots
@@ -133,9 +133,9 @@ const SignUp = () => {
               of our consultants will be in touch Immediately!
             </p>
           </div>
-          <div className=" bg-[#1D2939] rounded-[20px] md:w-[650px] w-[475px] md:ml-[200px] mt-2">
+          <div className=" bg-[#1D2939] rounded-[20px] md:w-[650px] w-[375px] md:ml-[200px] mt-2 border">
             <form action="" className="form "id="form">
-              <h3 className="text-[24px] text-left font-bold text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] mr-[160px] md:mr-[180px]">
+              <h3 className="md:text-[24px] text-[18px] text-left font-bold text-white leading-[130%] w-[310px] h-[31px] left-[70px] top-[56px] mr-[20px] md:mr-[180px]">
                 Book a Consultation with us
               </h3>
               <input
@@ -176,7 +176,7 @@ const SignUp = () => {
                 className="textarea"
                 placeholder="Drop a message....."
               />
-              <button className="btn">Send Request</button>
+              <button className="btn w-[350px] md:w-[494px]">Send Request</button>
             </form>
           </div>
         </div>
@@ -187,28 +187,28 @@ const SignUp = () => {
               <img
                 src={require("../img/Vector2.svg").default}
                 alt=""
-                className="w-[21.5px] h-[20.22px] top-[2.53px] left-[1.53px]"
+                className="md:w-[21.5px] md:h-[20.22px] w-[24px] h-[24px]  top-[2.53px] left-[1.53px]"
               />
             </span>
-            <p className="md:text-[16px] text-[12px] leading-[22px] font-[400px] w-[287px] h-[44px] ">
+            <p className=" md:text-[16px] text-[12px] md:leading-[22px] font-[400px] md:w-[287px] md:h-[44px] ">
               2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos,
               Nigeria.
             </p>
           </div>
           <div className="flex  justify-between items-center ">
-            <p className="md:text-[20px] text-[16px] leading-[27px] font-[700px] w-[231px] h-[27px]">
+            <p className=" md:text-[20px] text-[16px] md:leading-[27px] font-[700px] w-[231px] h-[27px]">
               Loyalbaze is almost here.
             </p>
           </div>
-          <div className="flex justify-between items-center  pr-[40px] ">
+          <div className="flex justify-between items-center gap-2 md:pr-[40px] ">
             <span>
               <img
                 src={require("../img/Vector3.svg").default}
                 alt=""
-                className="w-[20px] h-[20px] top-[2px] left-[2px]  mt-2"
+                className="md:w-[20px] md:h-[20px] w-[15px] top-[2px] left-[2px] mt-2"
               />
             </span>
-            <p className="md:text-[16px] text-[14px] leading-[22px] font-[400px] w-[158px] h-[22px] mt-2 ">
+            <p className="md:text-[16px] text-[12px] leading-[22px] font-[400px] w-[158px] h-[22px] mt-2 text-left ">
               +234 903 618 9485
             </p>
           </div>

@@ -184,7 +184,7 @@ const signupBG = [
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "absolute",
-      top: "1910px",
+      top: "1940px",
       left: "1220px",
       borderRadius: "1px",
     },
